@@ -76,7 +76,7 @@ def get_label_context(request):
     context['margin_left']   = int(context['font_size']*context['margin_left'])
     context['margin_right']  = int(context['font_size']*context['margin_right'])
 
-    context['fill_color']  = (255, 0, 0) if 'red' in context['label_size'] else (0, 0, 0)
+    context['fill_color']  = (0, 0, 0) if 'red' in context['label_size'] else (0, 0, 0)
 
     def get_font_path(font_family_name, font_style_name):
         try:
